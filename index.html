@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- pc축소형태 -->
+    <title>NIKE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+        window.onload = () => {
+            let menuBtn = document.querySelector('.menu_btn');
+            let mobileNav = document.querySelector('.mobile_nav');
+
+            menuBtn.addEventListener('click', (active)=>{
+                mobileNav.classList.toggle('active');
+            });
+        }/* script end */
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="inner">
+            <h1><a href="#"><img src="img/logo2.png" alt="나이키 로고"></a></h1>
+            <h1 class="logo_m"><a href="#"><img src="img/logo.png"  alt="나이키 로고 모바일"></a></h1>
+            <div class="inner_right">
+                <div class="icon_wrap">
+                    <div class="icon">
+                        <img src="img/icon_log-in_w.png" alt="">
+                        <a href="#"><p>로그인</p></a>
+                    </div><!-- icon -->
+                    <div class="icon">
+                        <img src="img/icon_user_w.png" alt="">
+                        <a href="#"><p>회원가입</p></a>
+                    </div><!-- icon -->
+                    <div class="icon">
+                        <img src="img/icon_map-pin_w.png" alt="">
+                        <a href="#"><p>매장찾기</p></a>
+                    </div><!-- icon -->
+                    <div class="icon">
+                        <img src="img/icon_help-circle_w.png" alt="">
+                        <a href="#"><p>고객센터</p></a>
+                    </div><!-- icon -->
+                    <div class="icon">
+                        <img src="img/icon_shopping-cart_w.png" alt="">
+                        <a href="#"><p>장바구니</p></a>
+                    </div><!-- icon -->
+                </div><!-- icon wrap -->
+                <div class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#" class="depth1">신상&대표</a>
+                            <ul class="depth2">
+                                <li><a href="#">베스트셀러</a></li>
+                                <li><a href="#">컬렉션</a></li>
+                                <li><a href="#">대표 제품</a></li>
+                                <li><a href="#">스포츠</a></li>
+                                <li><a href="#">가이드</a></li>
+                                <li><a href="#">스니커즈</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1">남성</a>
+                            <ul class="depth2">
+                                <li><a href="#">신제품</a></li>
+                                <li><a href="#">컬렉션</a></li>
+                                <li><a href="#">신발</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1">여성</a>
+                            <ul class="depth2">
+                                <li><a href="#">신제품</a></li>
+                                <li><a href="#">컬렉션</a></li>
+                                <li><a href="#">색상</a></li>
+                                <li><a href="#">신발</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1">아동</a>
+                            <ul class="depth2">
+                                <li><a href="#">신제품</a></li>
+                                <li><a href="#">컬렉션</a></li>
+                                <li><a href="#">신발</a></li>
+                                <li><a href="#">의류</a></li>
+                                <li><a href="#">용품</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="depth1">프로모션</a>
+                            <ul class="depth2">
+                                <li><a href="#">특별세일</a></li>
+                                <li><a href="#">남성용</a></li>
+                                <li><a href="#">여성용</a></li>
+                                <li><a href="#">아동용</a></li>
+                            </ul>
+                        </li>
+                    </ul><!-- gnb -->
+                    <div class="search">
+                        <input class="text_b1" type="text" placeholder=" ">
+                        <button class="text_b2" type="button"><a href="#"><img src="img/icon_Group_w.png" alt="검색아이콘"></a></button>
+                    </div><!-- icon -->
+                </div><!-- nav -->
+            </div><!-- inner right -->
+            <div class="icon_m">
+                <a href="#"><img src="img/icon_Group_w.png" alt="돋보기"></a>
+                <a href="#"><img src="img/icon_user_w.png" alt="사용자"></a>
+                <a href="#"><img src="img/icon_shopping-cart_w.png" alt="장보기"></a>
+                <div class="menu_btn mobile">
+                    <img src="img/menu_w.png" alt="메뉴 전체보기">
+                </div><!-- menu_btn -->
+            </div>
+            <nav class="mobile_nav mobile active">
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="depth01">신상&대표</a>
+                        <ul class="depth02">
+                            <li><a href="#">menu1-1</a></li>
+                            <li><a href="#">menu1-2</a></li>
+                            <li><a href="#">menu1-3</a></li>
+                            <li><a href="#">menu1-4</a></li>
+                        </ul><!-- depth02 -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">남성</a>
+                        <ul class="depth02">
+                            <li><a href="#">menu2-1</a></li>
+                            <li><a href="#">menu2-2</a></li>
+                            <li><a href="#">menu2-3</a></li>
+                            <li><a href="#">menu2-4</a></li>
+                        </ul><!-- depth02 -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">여성</a>
+                        <ul class="depth02">
+                            <li><a href="#">menu3-1</a></li>
+                            <li><a href="#">menu3-2</a></li>
+                            <li><a href="#">menu3-3</a></li>
+                            <li><a href="#">menu3-4</a></li>
+                        </ul><!-- depth02 -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">아동</a>
+                        <ul class="depth02">
+                            <li><a href="#">menu4-1</a></li>
+                            <li><a href="#">menu4-2</a></li>
+                            <li><a href="#">menu4-3</a></li>
+                            <li><a href="#">menu4-4</a></li>
+                        </ul><!-- depth02 -->
+                    </li>
+                    <li>
+                        <a href="#" class="depth01">프로모션</a>
+                        <ul class="depth02">
+                            <li><a href="#">menu4-1</a></li>
+                            <li><a href="#">menu4-2</a></li>
+                            <li><a href="#">menu4-3</a></li>
+                            <li><a href="#">menu4-4</a></li>
+                        </ul><!-- depth02 -->
+                    </li>
+                </ul><!-- gnb -->
+            </nav><!-- mobile_nav -->
+        </div><!-- inner -->
+    </header><!-- section1 (header) -->
+    
+    <main>
+        <section class="main_video">
+            <div class="video_wrap">
+                <video autoplay muted loop>
+                    <source src="img/nike.mp4" alt="나이키" 홍보 영상>
+                </video>
+                <div class="text">
+                    <h1>승리는 쉽게 오지 않는다</h1>
+                    <p>러닝을 싫어해본 적 없다면, 아직 충분히 사랑해본 적이 없는 것.</p>
+                </div>
+            </div>
+        </section><!-- main 비디오 -->
+        
+        <section class="section1">
+            <div class="item_wrap">
+                <img src="img/event.jpg" alt="이벤트사진">
+                <div class="items">
+                    <div class="text">
+                        <h2><span>안전한 러닝을 위한 </span>보강 운동 공유 이벤트</h2>
+                        <p>어떤 장소, 날씨, 시간에도 꾸준한 러닝을 이어 나가는 러너들과 함께하는 여정.<br>10월 7일 부터 매주 공개되는 마라톤 혜택 이벤트에 참가하고 특별한 혜택도 만나 보세요.</p>
+                        <span>완주 플랜: 마라톤까지 2주</span>
+                        <a href="#"><p>자세히 보기</p></a>
+                    </div><!-- text -->
+                </div><!-- items -->
+            </div><!-- item_wrap -->
+        </section><!-- section1-event -->
+
+        <section class="section2">
+            <div class="title">
+                <h1>NOW TREND</h1>
+                <p>최근 트렌드 제품</p>
+            </div><!-- title -->
+            <div class="items">
+                <div class="item">
+                    <a href="#"><img src="img/item1.jpg" alt="V2K 런"></a>
+                    <p>V2K 런</p>
+                </div><!-- item -->
+                <div class="item">
+                    <a href="#"><img src="img/item2.jpg" alt="자 2"></a>
+                    <p>자2</p>
+                </div><!-- item -->
+                <div class="item">
+                    <a href="#"><img src="img/item3.jpg" alt="에어포스 1"></a>
+                    <p>에어포스 1</p>
+                </div><!-- item -->
+                <div class="item">
+                    <a href="#"><img src="img/item4.jpg" alt="보메로 5"></a>
+                    <p>보메로 5</p>
+                </div><!-- item -->
+            </div><!-- items -->
+        </section><!-- section2 -->
+
+        <section class="section3">
+            <div class="title">
+                <h1>FEATURED</h1>
+                <p>추천 제품</p>
+            </div><!-- title -->
+            <div class="items">
+                <div class="left_item">
+                    <img src="img/item_7.jpg" alt="매드 볼티지">
+                    <div class="text">
+                        <h2>매드 볼티지</h2>
+                        <p>최상의 스피드, 정확성, 터치감을 선사하는 축구화로 경기장을 빛내보세요.</p>
+                        <a href="#"><p>자세히 보기</p><img src="img/icon_Right_w.png" alt=""></a>
+                    </div><!-- text -->
+                </div><!-- left -->
+                <div class="right_item">
+                    <div class="right">
+                        <img src="img/item5.jpg" alt="나이키 플리스">
+                        <div class="text">
+                            <h2>나이키 플리스</h2>
+                            <p>당신의 라이프 스타일에 맞는 솔루션을 제안합니다.</p>
+                                <a href="#"><p>자세히 보기</p><img src="img/icon_Right_w.png" alt=""></a>
+                        </div><!-- text -->
+                    </div><!-- right -->
+                    <div class="right">
+                        <img src="img/item6.jpg" alt="나이키 테크 우븐 수트">
+                        <div class="text">
+                            <h2>나이키 테크 우븐 수트</h2>
+                            <p>가볍고 신축성과 통기성이 좋은 소재로 제작되어
+                                한층 더 자유로운 움직임을 선사하는
+                                현대적인 테크 아이템 입니다.</p>
+                            <a href="#"><p>자세히 보기</p><img src="img/icon_Right_w.png" alt=""></a>
+                        </div><!-- text -->
+                    </div><!-- right -->
+                </div><!-- right_item -->
+            </div><!-- items -->
+        </section><!-- section3 -->
+
+        <section class="section4">
+            <div class="textwrap">
+                <ul>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                    <li><p>NIKE</p></li>
+                </ul>
+            </div><!-- text wrap -->
+        </section><!-- section4 흘러가는 텍스트 -->
+
+        <section class="section5">
+            <div class="title">
+                <h1>ALWAYS ICONIC</h1>
+                <p>대표적인 제품</p>
+            </div><!-- title -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/shoes1.png" alt="덩크">
+                        <div class="text">
+                            <h2>덩크</h2>
+                            <p class="side">단일 모델, 단일 컬러로는 역사상 가장 많이 팔린 스니커</p>
+                            <p class="side2">총 <span>80개</span> 관련된 상품</p>
+                            <p class="price">139,000 <span>원 ~</span></p>
+                            <a href="#"><p class="botton">구매하기</p></a>
+                        </div><!-- text -->
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="img/shoes2.png" alt="보메로">
+                        <div class="text">
+                            <h2>보메로</h2>
+                            <p class="side">통기성과 내구성이 우수한 소재, 편안한 에어 줌 쿠셔닝이 결합된 스니커</p>
+                            <p class="side2">총 <span>42개</span> 관련된 상품</p>
+                            <p class="price">151,200 <span>원 ~</span></p>
+                            <a href="#">
+                                <p class="botton">구매하기</p>
+                            </a>
+                        </div><!-- text -->
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="img/shoes3.png" alt="블레이저">
+                        <div class="text">
+                            <h2>블레이저</h2>
+                            <p class="side">클래식하고 간결하며 편안한 디자인으로 스트리트의 아이콘으로 자리잡은 스니커</p>
+                            <p class="side2">총 <span>19개</span> 관련된 상품</p>
+                            <p class="price">77,300 <span>원 ~</span></p>
+                            <a href="#">
+                                <p class="botton">구매하기</p>
+                            </a>
+                        </div><!-- text -->
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="img/shoes4.png" alt="에어맥스">
+                        <div class="text">
+                            <h2>에어맥스</h2>
+                            <p class="side">여유로운 라인과 헤리티지 트랙 룩이 매력적인 스니커</p>
+                            <p class="side2">총 <span>115개</span> 관련된 상품</p>
+                            <p class="price">70,800 <span>원 ~</span></p>
+                            <a href="#">
+                                <p class="botton">구매하기</p>
+                            </a>
+                        </div><!-- text -->
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="img/shoes5.png" alt="코르테즈">
+                        <div class="text">
+                            <h2>코르테즈</h2>
+                            <p class="side">앞꿈치 공간이 더 넓어지고, 옆면 패널이 강화된 스니커</p>
+                            <p class="side2">총 <span>46개</span> 관련된 상품</p>
+                            <p class="price">77,300 <span>원 ~</span></p>
+                            <a href="#">
+                                <p class="botton">구매하기</p>
+                            </a>
+                        </div><!-- text -->
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="img/shoes6.png" alt="에어조던 1">
+                        <div class="text">
+                            <h2>에어조던 1</h2>
+                            <p class="side">친숙하면서도 참신한 느낌의 깔끔한 클래식한 스니커</p>
+                            <p class="side2">총 <span>62개</span> 관련된 상품</p>
+                            <p class="price">139,000 <span>원 ~</span></p>
+                            <a href="#">
+                                <p class="botton">구매하기</p>
+                            </a>
+                        </div><!-- text -->
+                    </div><!-- swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="img/shoes7.png" alt="에어포스 1">
+                        <div class="text">
+                            <h2>에어포스 1</h2>
+                            <p class="side">80년대에서 영감을 받은 구조, 과감한 디테일, 농구 특유의 익숙한 디자인</p>
+                            <p class="side2">총 <span>80개</span> 관련된 상품</p>
+                            <p class="price">111,200 <span>원 ~</span></p>
+                            <a href="#">
+                                <p class="botton">구매하기</p>
+                            </a>
+                        </div><!-- text -->
+                    </div><!-- swiper-slide -->
+        
+                </div><!-- swiper wrapper -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div><!-- myswiper -->
+        </section><!-- section5 -->
+
+        <section class="section6">
+            <div class="title">
+                <h1>MEMBERSHIP</h1>
+                <p>나이키 멤버십</p>
+            </div><!-- title -->
+            <div class="items_wrap">
+                <div class="item">
+                    <img src="img/m_1.jpg" alt="멤버십1 언제 어디서든 운동을 시작할 수 있는">
+                    <a href="#">
+                        <p>언제 어디서든 운동을 시작할 수 있는</p>
+                    </a>
+                </div><!-- item -->
+                <div class="item">
+                    <img src="img/m_2.jpg" alt="나이키 멤버만을 위한 전용 제품">
+                    <a href="#">
+                        <p>나이키 멤버만을 위한 전용 제품</p>
+                    </a>
+                </div><!-- item -->
+                <div class="item">
+                    <img src="img/m_3.jpg" alt="운동과 쇼핑을 위한 특별한 혜택">
+                    <a href="#">
+                        <p>운동과 쇼핑을 위한 특별한 혜택</p>
+                    </a>
+                </div><!-- item -->
+                <div class="item">
+                    <img src="img/m_4.jpg" alt="최고의 스니커즈 커뮤니티">
+                    <a href="#">
+                        <p>최고의 스니커즈 커뮤니티</p>
+                    </a>
+                </div><!-- item -->
+            </div><!-- items_wrap -->
+        </section><!-- section6 -->
+    </main>
+
+    <footer class="footer">
+        <div class="wrap">
+            <img src="img/logo.png" alt="나이키로고">
+
+            <div class="text_wrap">
+                <div class="text_l">
+                    <ul class="rule">
+                        <li><a href="#">사업자 정보 확인</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리 방침</a></li>
+                        <li><a href="#">위치정보이용약관</a></li>
+                        <li><a href="#">영상정보처리기기 운영 방침</a></li>
+                    </ul>
+                    <p>(유)나이키코리아 대표 Kimberlee Lynn Chang Mendes, 킴벌리 린 창 멘데스</p>
+                    <p>서울 강남구 테헤란로 152 강남파이낸스센터 30층</p>
+                    <ul>
+                        <li>등록번호 220-88-09068</li>
+                        <li>통신판매업신고번호 2011-서울강남-03461</li>
+                    </ul>
+                    <p>고객센터 전화 문의 080-022-0182 </p>
+                    <p>이메일 service@nike.co.kr </p>
+                    <p>호스팅서비스사업자 (유)나이키코리아</p>
+                </div><!-- text_left -->
+
+                <div class="text_r">
+                    <ul class="Q_menu">
+                        <li>
+                            <p class="Q_title">안내</p>
+                            <ul>
+                                <li><a href="#">멤버가입</a></li>
+                                <li><a href="#">매장찾기</a></li>
+                                <li><a href="#">나이키 저널</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="Q_title">고객센터</p>
+                            <ul>
+                                <li><a href="#">주문배송조회</a></li>
+                                <li><a href="#">반품정책</a></li>
+                                <li><a href="#">결제방법</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">문의하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p class="Q_title">회사소개</p>
+                            <ul>
+                                <li><a href="#">About Nike</a></li>
+                                <li><a href="#">소식</a></li>
+                                <li><a href="#">채용</a></li>
+                                <li><a href="#">투자자</a></li>
+                                <li><a href="#">지속가능성</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!-- text_r -->
+            </div><!-- text_wrap -->
+
+            <div class="text_d">
+                <p>현금 등으로 결제 시 안전 거래를 위해 나이키 쇼핑몰에서 가입하신 한국결제네트웍스 유한회사의 구매안전 서비스(결제대금예치)를 이용하실 수 있습니다.</p>
+                <div class="link">
+                    <p>콘텐츠산업진흥법에 의한 콘텐츠 보호 안내</p><a href="#">자세히 보기</a>
+                </div><!-- link -->
+                <p>©  2024 Nike, Inc. All Rights Reserved </p>
+            </div>
+        </div><!-- wrap -->
+    </footer>
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            grabCursor: false,
+            spaceBetween: 30,
+            effect: "creative",
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            creativeEffect: {
+                prev: {
+                    shadow: false,
+                    translate: ["-120%", 0, -500],
+                },
+                next: {
+                    shadow: false,
+                    translate: ["120%", 0, -500],
+                },
+            },    
+        });
+    </script>
+</body>
+</html>
