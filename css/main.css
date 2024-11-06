@@ -553,12 +553,12 @@ section .title p{
 }
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
     width: 40px;
-    background: url('/img/icon_BackTo.png') center center / 100% no-repeat;
+    background: url('../img/icon_BackTo.png') center center / 100% no-repeat;
     left: 50px;
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev{
     width: 40px;
-    background: url('/img/icon_Next\ page.png') center center / 100% no-repeat;
+    background: url('../img/icon_Next\ page.png') center center / 100% no-repeat;
     right: 50px;
 }
 
