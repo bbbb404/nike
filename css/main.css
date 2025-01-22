@@ -771,6 +771,7 @@ section .title p{
         display: block;
         padding: 5px 0;
     }
+    
     /* 이벤트 */
     .section1 .item_wrap .items .text h2{
         font-size: 26px;
@@ -939,10 +940,7 @@ section .title p{
     }
     .section5 .swiper .swiper-slide .text{
         text-align: center;
-    }
-    .section5 .swiper .swiper-slide .text a p{
-        width: 144px;
-        margin-left: 50px; /* 임시방편 */
+        justify-items: center;
     }
     .swiper-button-prev, .swiper-rtl .swiper-button-next{
         width: 35px;
